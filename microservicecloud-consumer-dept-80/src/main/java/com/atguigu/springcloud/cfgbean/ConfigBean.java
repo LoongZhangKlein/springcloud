@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
  * @Description DOING
  * @date 2022-12-18-19:23
  */
-//@Configuration
+@Configuration
 public class ConfigBean {
 
     /**
