@@ -1,7 +1,7 @@
 package com.atguigu.springcloud.dao;
 
-//import com.atguigu.springcloud.entities.Dept;
-//import org.apache.ibatis.annotations.Mapper;
+import com.atguigu.springcloud.entities.Dept;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import java.util.List;
  * @date 2022-12-18-17:58
  */
 
-//@Mapper
-//public interface DeptDao {
-//    List<Dept> find(Dept dept);
-//    void add(Dept dept);
-//}
+@Mapper
+public interface DeptDao {
+    List<Dept> find(Dept dept);
+    void add(Dept dept);
+}

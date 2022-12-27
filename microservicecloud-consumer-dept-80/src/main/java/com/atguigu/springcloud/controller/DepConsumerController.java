@@ -1,6 +1,7 @@
 package com.atguigu.springcloud.controller;
 
 import com.atguigu.springcloud.entities.Dept;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,8 +27,9 @@ public class DepConsumerController {
     public Boolean add(Dept dept){
        return restTemplate.getForObject(REST_UTL_PREFIX+"/dept/add",Boolean.class,dept);
     }
-    @RequestMapping(value = "/consumer/dept/get")
+    @GetMapping(value = "/consumer/dept/get")
     public List<Dept> get(Dept dept){
+        System.out.println("");
         return restTemplate.getForObject(REST_UTL_PREFIX+"/dept/get",List.class);
     }
     @RequestMapping(value = "/consumer/dept/get/{id}")

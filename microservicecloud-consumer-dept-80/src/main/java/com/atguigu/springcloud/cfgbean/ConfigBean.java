@@ -1,7 +1,10 @@
 package com.atguigu.springcloud.cfgbean;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
+
+import javax.annotation.Resource;
 
 /**
  * @author loongzhang
@@ -14,16 +17,9 @@ public class ConfigBean {
     /**
      * 此处使用单例模式创建ConfigBean
      */
-    private RestTemplate restTemplate;
-    private ConfigBean(){}
-    public RestTemplate getRestTemplate(){
-        if (restTemplate==null){
-            synchronized (ConfigBean.class){
-                if (restTemplate==null){
-                    restTemplate=new RestTemplate();
-                }
-            }
-        }
-        return restTemplate;
+    @Bean
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
     }
+
 }
