@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mircroservicecloud-api" />
-        <module name="microservicecloud-consumer-dept-80" />
         <module name="microservicecloud-provider-dept-8001" />
+        <module name="mircroservicecloud-eureka-7001" />
+        <module name="microservicecloud-consumer-dept-80" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,10 +20,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="microservicecloud-consumer-dept-80" options="-parameters" />
-      <module name="microservicecloud-provider-dept-8001" options="-parameters" />
+      <module name="microservicecloud-consumer-dept-80" options="" />
+      <module name="microservicecloud-provider-dept-8001" options="" />
       <module name="microservicespringcloud-provider-dept-8001" options="-parameters" />
-      <module name="mircroservicecloud-api" options="-parameters" />
+      <module name="mircroservicecloud-api" options="" />
+      <module name="mircroservicecloud-eureka-7001" options="" />
       <module name="springcloud" options="-parameters" />
     </option>
   </component>

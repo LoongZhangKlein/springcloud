@@ -17,12 +17,12 @@
             <artifactId>mircroservicecloud-api</artifactId>
             <version>${project.version}</version>
         </dependency>
-<!--         actuator监控信息完善 -->
+        <!--         actuator监控信息完善 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-<!--         将微服务provider侧注册进eureka -->
+        <!--         将微服务provider侧注册进eureka -->
 
         <dependency>
             <groupId>junit</groupId>
@@ -46,12 +46,12 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
 
-<!--                 加上一下两个包报错-->
-<!--        spring-boot-已经包含了该功能-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-jetty</artifactId>-->
-<!--        </dependency>-->
+        <!--                 加上一下两个包报错-->
+        <!--        spring-boot-已经包含了该功能-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-jetty</artifactId>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -70,6 +70,30 @@
             <artifactId>mircroservicecloud-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <!--将本服务注册进eureka↓↓↓↓↓↓↓↓↓-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <!-- 监控信息完善       -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+        </dependency>
+        <!--将本服务注册进eureka ↑↑↑↑↑↑↑↑↑-->
+        <!-- 修改后立即生效，热部署 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>springloaded</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
 </project>
