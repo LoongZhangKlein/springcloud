@@ -16,7 +16,8 @@ import java.util.List;
  */
 @RestController
 public class DepConsumerController {
-    private static final String REST_UTL_PREFIX = "http://localhost:8001";
+    //private static final String REST_UTL_PREFIX = "http://localhost:8001";
+    private static final String REST_UTL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
     /**
      * 发送请求便捷访问http方法
      */

@@ -3,9 +3,13 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/microservicecloud-consumer-dept-80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-8002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-8003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mircroservicecloud-api/microservicespringcloud-provider-dept-8001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mircroservicecloud-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mircroservicecloud-eureka-7001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mircroservicecloud-eureka-7002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mircroservicecloud-eureka-7003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
   </component>
 </project>
