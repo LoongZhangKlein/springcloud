@@ -29,15 +29,15 @@ public class DepConsumerController {
         return restTemplate.getForObject(REST_UTL_PREFIX + "/dept/add", Boolean.class, dept);
     }
 
-    @GetMapping(value = "/consumer/dept/get")
-    public List<Dept> get(Dept dept) {
-        System.out.println("");
-        return restTemplate.getForObject(REST_UTL_PREFIX + "/dept/get", List.class);
-    }
+//    @GetMapping(value = "/consumer/dept/get")
+//    public List<Dept> get() {
+//        System.out.println("");
+//        return restTemplate.getForObject(REST_UTL_PREFIX + "/dept/get", List.class);
+//    }
 
     @RequestMapping(value = "/consumer/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id) {
-        return restTemplate.getForObject(REST_UTL_PREFIX + "/dept/get" + id, Dept.class);
+        return restTemplate.getForObject(REST_UTL_PREFIX + "/dept/get/" + id, Dept.class);
     }
 
     /**

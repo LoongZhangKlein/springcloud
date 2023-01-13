@@ -12,6 +12,11 @@
     <artifactId>microservicecloud-provider-dept-8001</artifactId>
 
     <dependencies>
+        <!--监控信息完善-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.atguigu.springcloud</groupId>
             <artifactId>mircroservicecloud-api</artifactId>

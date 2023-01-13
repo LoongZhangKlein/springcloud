@@ -7,6 +7,7 @@
 	<select id="find" resultType="Dept" parameterType="Long">
 		select deptno,dname,db_source from dept;
 	</select>
+
 	<select id="findAll" resultType="Dept">
 		select deptno,dname,db_source from dept;
 	</select>

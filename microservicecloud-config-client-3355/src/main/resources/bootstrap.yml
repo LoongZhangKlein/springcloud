@@ -1,0 +1,10 @@
+spring:
+  #本文件是系统级别的资源配置
+  cloud:
+    config:
+      # 需要和github中的资源名字一致
+      name: microservicecloud-config-client
+      profile: dev
+      label: master
+      #本服务需要先找3344服务通过3344服务获取git的地址
+      uri: http://config-3344.com:3344

@@ -11,5 +11,6 @@ import java.util.List;
  */
 public interface DeptService  {
     List<Dept> find(Dept dept);
+    Dept findById(Long id);
     void add(Dept dept);
 }

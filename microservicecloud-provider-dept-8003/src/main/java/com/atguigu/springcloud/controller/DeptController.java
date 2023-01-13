@@ -50,4 +50,11 @@ public class DeptController {
                     +instance.getUri());
         }
     }
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    public List<Dept> list(){
+        return  deptService.find(new Dept());
+    }
+
+
+
 }

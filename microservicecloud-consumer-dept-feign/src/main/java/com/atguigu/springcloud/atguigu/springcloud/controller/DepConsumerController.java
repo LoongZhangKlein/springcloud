@@ -32,8 +32,9 @@ public class DepConsumerController {
 
 
 
-    @RequestMapping(value = "/consumer/dept/get/{id}")
+    @GetMapping(value = "/consumer/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id) {
+        System.out.println("111");
         return deptClientService.get(id);
     }
 
@@ -41,9 +42,14 @@ public class DepConsumerController {
      * 提供对外访问接口
      * 相当于 @GetMapping
      */
-    @RequestMapping(value = "/consumer/dept/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/consumer/dept/discovery", method = RequestMethod.GET)
     public void discovery() {
         List<Dept> list = this.deptClientService.list();
         System.out.println(list);
+    }
+
+    @RequestMapping(value = "/consumer/dept/list", method = RequestMethod.GET)
+    public List<Dept> list() {
+        return this.deptClientService.list();
     }
 }
