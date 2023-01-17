@@ -8,9 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservicecloud-provider-dept-8002" />
+        <module name="microservicecloud-config-eureka-client-7001" />
         <module name="microservicecloud-provider-dept-8001" />
         <module name="mircroservicecloud-eureka-7001" />
         <module name="microservicecloud-config-client-3355" />
+        <module name="untitled" />
         <module name="microservicecloudconfig-3344" />
         <module name="mircroservicecloud-eureka-7002" />
         <module name="mircroservicecloud-eureka-7003" />
@@ -26,6 +28,7 @@
     <bytecodeTargetLevel>
       <module name="microservicespringcloud-provider-dept-8001" target="1.8" />
       <module name="springcloud" target="17" />
+      <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

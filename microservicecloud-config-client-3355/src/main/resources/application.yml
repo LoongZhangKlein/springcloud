@@ -1,3 +1,4 @@
 spring:
   application:
+    # 此处名字同bootstrap中的配置名字
     name: microservicecloud-config-client
